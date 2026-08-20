@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Photography Archive | Brian Lam</title>
+  <meta name="description"
+    content="Visual archive by Brian Lam — Exploring streetscapes, architecture, and atmosphere across New York, Tokyo, Chicago, Seattle, and WashU.">
+  <meta name="author" content="Brian Lam">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Photography Archive | Brian Lam">
+  <meta property="og:description"
+    content="123 captures across New York, Tokyo, Chicago, Seattle, and WashU (2015–2021).">
+  <meta property="og:image" content="assets/photography/nyc2021/1.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="photography-page">
+  <!-- Ambient background glow elements -->
+  <div class="glow-sphere sphere-1"></div>
+  <div class="glow-sphere sphere-2"></div>
+  <div class="glow-sphere sphere-3"></div>
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" id="brand-logo">
+        <span class="logo-mark">BL</span>
+        <span class="logo-text">Brian Lam<span class="dot-accent">.</span></span>
+      </a>
+
+      <nav class="desktop-nav" id="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#focus" class="nav-link">Focus</a></li>
+          <li><a href="photography.html" class="nav-link active">Photography</a></li>
+          <li><a href="index.html#journey" class="nav-link">Journey</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-secondary btn-sm" id="nav-back-home">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Back to Home</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="index.html#about" class="mobile-link">About</a></li>
+        <li><a href="index.html#focus" class="mobile-link">Focus</a></li>
+        <li><a href="photography.html" class="mobile-link">Photography</a></li>
+        <li><a href="index.html#journey" class="mobile-link">Journey</a></li>
+        <li class="mobile-drawer-cta">
+          <a href="https://www.linkedin.com/in/brla/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary btn-block">
+            LinkedIn Profile
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero-section">
+      <div class="section-container">
+
+        <div class="gallery-hero-header">
+          <a href="index.html" class="back-link">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Back to main portfolio</span>
+          </a>
+
+          <div class="section-tag">Visual Archive</div>
+          <h1 class="gallery-hero-title">Through the Lens</h1>
+          <p class="gallery-hero-subtitle">
+            A visual journal across New York City, Tokyo, Chicago, Seattle, and St. Louis.
+            <span class="total-badge" id="total-badge">123 Captures</span>
+          </p>
+        </div>
+
+        <!-- Album Spotlight / Series Shortcuts -->
+        <div class="album-cards-row">
+          <button class="album-card glass-panel" data-filter-series="nyc">
+            <span class="album-icon">🏙️</span>
+            <div class="album-info">
+              <strong class="album-name">New York City</strong>
+              <span class="album-count">59 photos · 2015–2021</span>
+            </div>
+          </button>
+
+          <button class="album-card glass-panel" data-filter-series="tokyo">
+            <span class="album-icon">🏮</span>
+            <div class="album-info">
+              <strong class="album-name">Tokyo</strong>
+              <span class="album-count">15 photos · 2017</span>
+            </div>
+          </button>
+
+          <button class="album-card glass-panel" data-filter-series="chicago">
+            <span class="album-icon">🌊</span>
+            <div class="album-info">
+              <strong class="album-name">Chicago</strong>
+              <span class="album-count">17 photos · 2016</span>
+            </div>
+          </button>
+
+          <button class="album-card glass-panel" data-filter-series="seattle">
+            <span class="album-icon">🌲</span>
+            <div class="album-info">
+              <strong class="album-name">Seattle</strong>
+              <span class="album-count">14 photos · 2016</span>
+            </div>
+          </button>
+
+          <button class="album-card glass-panel" data-filter-series="washu">
+            <span class="album-icon">🎙️</span>
+            <div class="album-info">
+              <strong class="album-name">Debate Day</strong>
+              <span class="album-count">18 photos · 2016</span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="gallery-filter-bar" id="gallery-filters">
+          <button class="gallery-filter-btn active" data-filter="all">All Photos (<span
+              id="count-all">123</span>)</button>
+          <button class="gallery-filter-btn" data-filter="nyc">NYC (59)</button>
+          <button class="gallery-filter-btn" data-filter="tokyo">Tokyo (15)</button>
+          <button class="gallery-filter-btn" data-filter="chicago">Chicago (17)</button>
+          <button class="gallery-filter-btn" data-filter="seattle">Seattle (14)</button>
+          <button class="gallery-filter-btn" data-filter="washu">Debate Day (18)</button>
+        </div>
+
+        <!-- Filter Status Feedback -->
+        <div class="gallery-status-bar">
+          <span class="current-filter-label" id="current-filter-label">Showing all 123 photographs</span>
+        </div>
+
+        <!-- Full Photography Grid -->
+        <div class="photo-gallery-grid full-gallery-grid" id="full-photo-grid">
+          <!-- Populated dynamically by photography.js -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Photo Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close photo preview">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous photo">&#10094;</button>
+      <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next photo">&#10095;</button>
+
+      <div class="lightbox-figure">
+        <img src="" alt="" id="lightbox-image" class="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption">
+          <div class="lightbox-title-row">
+            <h4 id="lightbox-title">Photo Title</h4>
+            <span id="lightbox-loc" class="lightbox-loc-badge">Location</span>
+          </div>
+          <p id="lightbox-tech" class="lightbox-tech-info">Series Details</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="section-container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">Brian Lam<span class="dot-accent">.</span></span>
+        <span class="footer-role">Software Engineer & Photographer · NYC</span>
+      </div>
+      <div class="footer-right">
+        <p class="copyright">&copy; <span id="current-year">2026</span> Brian Lam</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="photos-data.js"></script>
+  <script src="photography.js"></script>
+</body>
+
+</html>

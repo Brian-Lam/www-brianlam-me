@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Brian Lam | Software Engineer & Photographer</title>
+  <meta name="description"
+    content="Personal website of Brian Lam — Software Engineer at Google DeepMind, former Tech Lead for Google User Data Infra & Privacy Enforcement, previously at Microsoft. Based in NYC.">
+  <meta name="keywords"
+    content="Brian Lam, Google DeepMind, Google, Microsoft, Software Engineer, Photography, New York City">
+  <meta name="author" content="Brian Lam">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brian Lam | Software Engineer, NYC">
+  <meta property="og:description"
+    content="Software Engineer at Google DeepMind · Former TL for Google User Data Infra & Privacy Enforcement · Previously at Microsoft. Based in NYC.">
+  <meta property="og:image" content="assets/profile/park-bench.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="glow-sphere sphere-1"></div>
+  <div class="glow-sphere sphere-2"></div>
+  <div class="glow-sphere sphere-3"></div>
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="#about" class="brand-logo" id="brand-logo">
+        <span class="logo-mark">BL</span>
+        <span class="logo-text">Brian Lam<span class="dot-accent">.</span></span>
+      </a>
+
+      <nav class="desktop-nav" id="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#focus" class="nav-link">Focus</a></li>
+          <li><a href="#photography" class="nav-link">Photography</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://www.linkedin.com/in/brla/" target="_blank" rel="noopener noreferrer"
+          class="btn btn-secondary btn-sm nav-linkedin" id="nav-linkedin-link">
+          <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.22c-.93 0-1.68.75-1.68 1.68s.75 1.68 1.68 1.68 1.68-.75 1.68-1.68-.75-1.68-1.68-1.68Z" />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#focus" class="mobile-link">Focus</a></li>
+        <li><a href="#photography" class="mobile-link">Photography</a></li>
+        <li><a href="photography.html" class="mobile-link">Full Gallery (123 Photos) ↗</a></li>
+        <li><a href="#journey" class="mobile-link">Journey</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li class="mobile-drawer-cta">
+          <a href="https://www.linkedin.com/in/brla/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary btn-block">
+            View LinkedIn Profile
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / About Section with Profile Picture -->
+    <section class="hero-section" id="about">
+      <div class="section-container hero-container">
+
+        <div class="hero-grid">
+
+          <!-- Bio & Story Column -->
+          <div class="hero-content">
+            <div class="badge-status-pill animate-fade-in">
+              <span class="status-indicator"></span>
+              <span class="status-text">Software Engineer @ <strong>Google DeepMind</strong> · NYC</span>
+            </div>
+
+            <h1 class="hero-title animate-slide-up">
+              Hi, I'm Brian Lam.
+            </h1>
+
+            <p class="hero-description animate-slide-up delay-1">
+              I'm a software engineer residing in <strong>New York City</strong>.
+            </p>
+
+            <p class="hero-description secondary-bio animate-slide-up delay-2">
+              Currently at <strong>Google DeepMind</strong> working on Gemini.
+              Formerly a Tech Lead for <strong>Google User Data Infra & Privacy Enforcement</strong>,
+              and previously at <strong>Microsoft</strong>.
+            </p>
+
+            <div class="hero-cta-group animate-slide-up delay-3">
+              <a href="photography.html" class="btn btn-primary btn-lg glow-button" id="hero-cta-photo">
+                <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                  <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+                <span>Explore Photography</span>
+              </a>
+              <a href="#focus" class="btn btn-glass btn-lg" id="hero-cta-focus">
+                <span>Software Engineering Career</span>
+              </a>
+              <a href="https://www.linkedin.com/in/brla/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-lg" id="hero-cta-connect">
+                <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.22c-.93 0-1.68.75-1.68 1.68s.75 1.68 1.68 1.68 1.68-.75 1.68-1.68-.75-1.68-1.68-1.68Z" />
+                </svg>
+                <span>Connect</span>
+              </a>
+            </div>
+
+            <!-- Quick High-Level Tags -->
+            <div class="interests-pills-row animate-slide-up delay-3">
+              <span class="interest-pill">Google DeepMind</span>
+              <span class="interest-pill">User Data Infra & Privacy</span>
+              <span class="interest-pill">Microsoft Alum</span>
+              <span class="interest-pill">Photography</span>
+              <span class="interest-pill">New York City</span>
+            </div>
+          </div>
+
+          <!-- Profile Portrait Column -->
+          <div class="hero-image-col animate-fade-in delay-2">
+            <div class="profile-card-wrapper">
+              <div class="profile-card-glow"></div>
+              <div class="profile-card-inner glass-panel">
+                <img src="assets/profile/park-bench.jpg" alt="Brian Lam sitting on a park bench" class="profile-photo"
+                  loading="eager">
+                <div class="profile-floating-badge">
+                  <span class="badge-icon">📍</span>
+                  <div class="badge-text">
+                    <strong>New York City</strong>
+                    <span>Queens, NYC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- High-Level Focus Areas Section -->
+    <section class="section-wrapper focus-section" id="focus">
+      <div class="section-container">
+
+        <div class="section-header">
+          <div class="section-tag">Overview</div>
+          <h2 class="section-title">What I Do</h2>
+          <p class="section-subtitle">
+            A high-level view of my engineering journey across AI infrastructure, distributed systems, and data privacy.
+          </p>
+        </div>
+
+        <div class="focus-grid">
+
+          <div class="focus-card glass-panel">
+            <div class="focus-icon-wrap gemini-theme">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <span class="focus-org">Google DeepMind</span>
+            <h3 class="focus-title">Gemini Model Serving Infra</h3>
+            <p class="focus-desc">
+              Currently engineering scalable, low-latency model serving infrastructure for Gemini at Google DeepMind in
+              NYC.
+            </p>
+          </div>
+
+          <div class="focus-card glass-panel">
+            <div class="focus-icon-wrap infra-theme">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <span class="focus-org">Google</span>
+            <h3 class="focus-title">User Data Infra & Privacy</h3>
+            <p class="focus-desc">
+              Former Tech Lead for User Data integrations and automated privacy enforcement across thousands of features
+              at Google.
+            </p>
+          </div>
+
+          <div class="focus-card glass-panel">
+            <div class="focus-icon-wrap excel-theme">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span class="focus-org">Microsoft</span>
+            <h3 class="focus-title">Software Engineering</h3>
+            <p class="focus-desc">
+              Previously developed connected intelligent features and cross-platform capabilities on the Microsoft Excel
+              team.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Curated Photography Highlights Section -->
+    <section class="section-wrapper photo-section" id="photography">
+      <div class="section-container">
+
+        <div class="section-header">
+          <div class="section-tag">Visual Highlights</div>
+          <h2 class="section-title">Through the Lens</h2>
+          <p class="section-subtitle">
+            Selected captures across New York, Tokyo, Chicago, Seattle, and St. Louis.
+          </p>
+        </div>
+
+        <!-- Curated 6-Photo Preview Grid Rendered by app.js -->
+        <div class="photo-gallery-grid homepage-curated-grid" id="homepage-photo-grid"></div>
+
+        <!-- Call to Action Banner to Dedicated Photography Page -->
+        <div class="gallery-explore-banner glass-panel">
+          <div class="explore-banner-content">
+            <div class="explore-banner-left">
+              <span class="explore-badge">I should really do photography again...</span>
+              <h3 class="explore-title">Explore the Full Photography Archive</h3>
+              <p class="explore-desc">
+                Browse through complete collections spanning NYC (2015–2021), Tokyo '17, Chicago '16, Seattle '16, and
+                Debate Day '16.
+              </p>
+            </div>
+            <div class="explore-banner-right">
+              <a href="photography.html" class="btn btn-primary btn-lg glow-button" id="explore-full-gallery-btn">
+                <span>View Full Gallery</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Career Journey Chapters Section -->
+    <section class="section-wrapper journey-section" id="journey">
+      <div class="section-container">
+
+        <div class="section-header">
+          <div class="section-tag">Career</div>
+          <h2 class="section-title">The Journey</h2>
+          <p class="section-subtitle">
+            A high-level timeline of chapters and roles.
+          </p>
+        </div>
+
+        <div class="journey-cards-grid">
+
+          <div class="journey-card glass-panel current-chapter">
+            <div class="journey-period">2026 – Present</div>
+            <h3 class="journey-heading">Google DeepMind</h3>
+            <p class="journey-role">Software Engineer · Model Infra</p>
+            <p class="journey-text">
+              Model Serving, Model Release, and Evaluation Infra for Gemini.
+            </p>
+          </div>
+
+          <div class="journey-card glass-panel">
+            <div class="journey-period">2018 – 2026</div>
+            <h3 class="journey-heading">Google</h3>
+            <p class="journey-role">Software Engineer · User Data Infra & Privacy Enforcement</p>
+            <p class="journey-text">
+              Led distributed user data infrastructure and privacy enforcement across Google services.
+            </p>
+          </div>
+
+          <div class="journey-card glass-panel">
+            <div class="journey-period">2017 – 2018</div>
+            <h3 class="journey-heading">Microsoft</h3>
+            <p class="journey-role">Software Engineer · Excel</p>
+            <p class="journey-text">
+              Developed features for Linked data types on the Microsoft Excel team.
+            </p>
+          </div>
+
+          <div class="journey-card glass-panel">
+            <div class="journey-period">2014 – 2016</div>
+            <h3 class="journey-heading">WashU & Startups</h3>
+            <p class="journey-role">Head Teaching Assistant & Early Startups</p>
+            <p class="journey-text">
+              Head TA at Washington University in St. Louis; early startup engineering (YC Fellowship).
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section class="section-wrapper contact-section" id="contact">
+      <div class="section-container">
+
+        <div class="contact-card glass-panel">
+          <div class="contact-content">
+            <div class="section-tag">Get in Touch</div>
+            <h2 class="contact-title">Let’s Connect</h2>
+            <p class="contact-desc">
+              Based in New York City. Feel free to reach out on LinkedIn.
+            </p>
+
+            <div class="contact-links-row">
+              <a href="https://www.linkedin.com/in/brla/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary btn-lg" id="contact-linkedin-btn">
+                <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.22c-.93 0-1.68.75-1.68 1.68s.75 1.68 1.68 1.68 1.68-.75 1.68-1.68-.75-1.68-1.68-1.68Z" />
+                </svg>
+                <span>linkedin.com/in/brla</span>
+              </a>
+
+              <button class="btn btn-glass btn-lg" id="copy-linkedin-btn">
+                <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copy LinkedIn Link</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Photo Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close photo preview">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous photo">&#10094;</button>
+      <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next photo">&#10095;</button>
+
+      <div class="lightbox-figure">
+        <img src="" alt="" id="lightbox-image" class="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption">
+          <div class="lightbox-title-row">
+            <h4 id="lightbox-title">Photo Title</h4>
+            <span id="lightbox-loc" class="lightbox-loc-badge">Location</span>
+          </div>
+          <p id="lightbox-tech" class="lightbox-tech-info">Series Details</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="section-container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">Brian Lam<span class="dot-accent">.</span></span>
+        <span class="footer-role">Software Engineer · Google DeepMind · NYC</span>
+      </div>
+      <div class="footer-right">
+        <p class="copyright">&copy; <span id="current-year">2026</span> Brian Lam</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="photos-data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
