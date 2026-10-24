@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Brian Lam | Software Engineer</title>
+  <title>Brian Lam | Software Engineer, NYC</title>
   <meta name="description"
     content="Personal website of Brian Lam — Software Engineer at Google DeepMind, former Tech Lead for Google User Data Infra & Privacy Enforcement, previously at Microsoft. Based in NYC.">
   <meta name="keywords"
@@ -37,19 +37,20 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L0NFH814LF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-L0NFH814LF');
   </script>
-</head>
 
-<body>
   <!-- Ambient background glow elements -->
   <div class="glow-sphere sphere-1"></div>
   <div class="glow-sphere sphere-2"></div>
@@ -121,7 +122,6 @@
 
           <!-- Bio & Story Column -->
           <div class="hero-content">
-
             <h1 class="hero-title animate-slide-up">
               Hi, I'm Brian Lam.
             </h1>
@@ -137,16 +137,21 @@
             </p>
 
             <div class="hero-cta-group animate-slide-up delay-3">
-              <a href="photography.html" class="btn btn-primary btn-lg glow-button" id="hero-cta-photo">
+              <a href="#focus" class="btn btn-primary btn-lg glow-button" id="hero-cta-focus">
+                <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span>Software Engineering Career</span>
+              </a>
+              <a href="photography.html" class="btn btn-glass btn-lg" id="hero-cta-photo">
                 <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
                   stroke-width="2">
                   <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
                   <circle cx="12" cy="13" r="4"></circle>
                 </svg>
                 <span>Explore Photography</span>
-              </a>
-              <a href="#focus" class="btn btn-glass btn-lg" id="hero-cta-focus">
-                <span>Software Engineering Career</span>
               </a>
               <a href="https://www.linkedin.com/in/brla/" target="_blank" rel="noopener noreferrer"
                 class="btn btn-outline btn-lg" id="hero-cta-connect">
