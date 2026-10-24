@@ -144,10 +144,9 @@ function initFullGalleryAndLightbox() {
   let currentActiveIndex = 0;
 
   const categoryNames = {
-    'all': 'all 123 photographs',
+    'all': 'all 106 photographs',
     'nyc': 'New York City collection (59 photos)',
     'tokyo': 'Tokyo collection (15 photos)',
-    'chicago': 'Chicago collection (17 photos)',
     'seattle': 'Seattle collection (14 photos)',
     'washu': 'Debate Day at WashU collection (18 photos)'
   };

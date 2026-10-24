@@ -1,5 +1,5 @@
 /**
- * Photography Dataset: 123 Photos across 8 Series
+ * Photography Dataset: 106 Photos across 7 Series
  * Brian Lam Photography Archive
  */
 window.photosData = [
@@ -289,7 +289,7 @@ window.photosData = [
     "year": "2019",
     "src": "assets/photography/nyc2019/1-large.png",
     "thumb": "assets/photography/nyc2019/1.png",
-    "featured": false
+    "featured": true
   },
   {
     "id": 25,
@@ -481,7 +481,7 @@ window.photosData = [
     "year": "2017",
     "src": "assets/photography/tokyo2017/06.jpg",
     "thumb": "assets/photography/tokyo2017/06.jpg",
-    "featured": true
+    "featured": false
   },
   {
     "id": 41,
@@ -761,210 +761,6 @@ window.photosData = [
   },
   {
     "id": 64,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #01",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/01.jpg",
-    "thumb": "assets/photography/chicago2016/01.jpg",
-    "featured": true
-  },
-  {
-    "id": 65,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #02",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/02.jpg",
-    "thumb": "assets/photography/chicago2016/02.jpg",
-    "featured": false
-  },
-  {
-    "id": 66,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #03",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/03.jpg",
-    "thumb": "assets/photography/chicago2016/03.jpg",
-    "featured": false
-  },
-  {
-    "id": 67,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #04",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/04.jpg",
-    "thumb": "assets/photography/chicago2016/04.jpg",
-    "featured": false
-  },
-  {
-    "id": 68,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #05",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/05.jpg",
-    "thumb": "assets/photography/chicago2016/05.jpg",
-    "featured": false
-  },
-  {
-    "id": 69,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #06",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/06.jpg",
-    "thumb": "assets/photography/chicago2016/06.jpg",
-    "featured": false
-  },
-  {
-    "id": 70,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #07",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/07.jpg",
-    "thumb": "assets/photography/chicago2016/07.jpg",
-    "featured": false
-  },
-  {
-    "id": 71,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #08",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/08.jpg",
-    "thumb": "assets/photography/chicago2016/08.jpg",
-    "featured": false
-  },
-  {
-    "id": 72,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #09",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/09.jpg",
-    "thumb": "assets/photography/chicago2016/09.jpg",
-    "featured": false
-  },
-  {
-    "id": 73,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #10",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/10.jpg",
-    "thumb": "assets/photography/chicago2016/10.jpg",
-    "featured": false
-  },
-  {
-    "id": 74,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #11",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/11.jpg",
-    "thumb": "assets/photography/chicago2016/11.jpg",
-    "featured": false
-  },
-  {
-    "id": 75,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #12",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/12.jpg",
-    "thumb": "assets/photography/chicago2016/12.jpg",
-    "featured": false
-  },
-  {
-    "id": 76,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #13",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/13.jpg",
-    "thumb": "assets/photography/chicago2016/13.jpg",
-    "featured": false
-  },
-  {
-    "id": 77,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #14",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/14.jpg",
-    "thumb": "assets/photography/chicago2016/14.jpg",
-    "featured": false
-  },
-  {
-    "id": 78,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #15",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/15.jpg",
-    "thumb": "assets/photography/chicago2016/15.jpg",
-    "featured": false
-  },
-  {
-    "id": 79,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #16",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/16.jpg",
-    "thumb": "assets/photography/chicago2016/16.jpg",
-    "featured": false
-  },
-  {
-    "id": 80,
-    "series": "chicago2016",
-    "seriesTitle": "Chicago (2016)",
-    "category": "chicago",
-    "title": "Chicago \u00b7 #17",
-    "location": "Chicago, IL",
-    "year": "2016",
-    "src": "assets/photography/chicago2016/17.jpg",
-    "thumb": "assets/photography/chicago2016/17.jpg",
-    "featured": false
-  },
-  {
-    "id": 81,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -976,7 +772,7 @@ window.photosData = [
     "featured": true
   },
   {
-    "id": 82,
+    "id": 65,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -988,7 +784,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 83,
+    "id": 66,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1000,7 +796,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 84,
+    "id": 67,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1012,7 +808,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 85,
+    "id": 68,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1024,7 +820,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 86,
+    "id": 69,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1036,7 +832,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 87,
+    "id": 70,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1048,7 +844,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 88,
+    "id": 71,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1060,7 +856,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 89,
+    "id": 72,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1072,7 +868,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 90,
+    "id": 73,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1084,7 +880,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 91,
+    "id": 74,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1096,7 +892,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 92,
+    "id": 75,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1108,7 +904,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 93,
+    "id": 76,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1120,7 +916,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 94,
+    "id": 77,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1132,7 +928,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 95,
+    "id": 78,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1144,7 +940,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 96,
+    "id": 79,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1156,7 +952,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 97,
+    "id": 80,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1168,7 +964,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 98,
+    "id": 81,
     "series": "debateday2016",
     "seriesTitle": "Debate Day at WashU (2016)",
     "category": "washu",
@@ -1180,7 +976,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 99,
+    "id": 82,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1189,10 +985,10 @@ window.photosData = [
     "year": "2015",
     "src": "assets/photography/nyc2015/01.jpg",
     "thumb": "assets/photography/nyc2015/01.jpg",
-    "featured": false
+    "featured": true
   },
   {
-    "id": 100,
+    "id": 83,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1204,7 +1000,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 101,
+    "id": 84,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1216,7 +1012,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 102,
+    "id": 85,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1228,7 +1024,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 103,
+    "id": 86,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1240,7 +1036,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 104,
+    "id": 87,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1252,7 +1048,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 105,
+    "id": 88,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1264,7 +1060,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 106,
+    "id": 89,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1276,7 +1072,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 107,
+    "id": 90,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1288,7 +1084,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 108,
+    "id": 91,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1300,7 +1096,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 109,
+    "id": 92,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1312,7 +1108,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 110,
+    "id": 93,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1324,7 +1120,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 111,
+    "id": 94,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1336,7 +1132,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 112,
+    "id": 95,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1348,7 +1144,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 113,
+    "id": 96,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1360,7 +1156,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 114,
+    "id": 97,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1372,7 +1168,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 115,
+    "id": 98,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1384,7 +1180,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 116,
+    "id": 99,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1396,7 +1192,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 117,
+    "id": 100,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1408,7 +1204,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 118,
+    "id": 101,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1420,7 +1216,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 119,
+    "id": 102,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1432,7 +1228,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 120,
+    "id": 103,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1444,7 +1240,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 121,
+    "id": 104,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1456,7 +1252,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 122,
+    "id": 105,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",
@@ -1468,7 +1264,7 @@ window.photosData = [
     "featured": false
   },
   {
-    "id": 123,
+    "id": 106,
     "series": "nyc2015",
     "seriesTitle": "New York City (2015)",
     "category": "nyc",

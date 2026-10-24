@@ -173,19 +173,30 @@ function initCuratedHomepageGallery() {
 
   photoGrid.innerHTML = '';
 
+  // Helper to remove # numbers from preview card titles (e.g. 'New York City · #01' -> 'New York City')
+  function formatPreviewTitle(title) {
+    if (!title) return '';
+    return title
+      .replace(/\s*[·•\-\/]\s*#\d+/gi, '')
+      .replace(/\s*#\d+/gi, '')
+      .trim();
+  }
+
   curatedPhotos.forEach((photo, idx) => {
     const card = document.createElement('div');
     card.className = 'photo-card';
     card.setAttribute('data-category', photo.category);
     card.setAttribute('data-id', photo.id);
 
+    const displayTitle = formatPreviewTitle(photo.title);
+
     card.innerHTML = `
       <div class="photo-img-wrap">
-        <img src="${photo.thumb}" alt="${photo.title}" loading="lazy" class="gallery-img">
+        <img src="${photo.thumb}" alt="${displayTitle || photo.title}" loading="lazy" class="gallery-img">
         <div class="photo-overlay">
           <div class="photo-meta">
             <span class="photo-loc">${photo.location} · ${photo.year}</span>
-            <h4 class="photo-title">${photo.title}</h4>
+            <h4 class="photo-title">${displayTitle || photo.title}</h4>
             <span class="photo-tech">${photo.seriesTitle}</span>
           </div>
           <button class="photo-zoom-btn" aria-label="View photo in lightbox">
@@ -228,9 +239,11 @@ function initCuratedHomepageGallery() {
     const photo = curatedPhotos[currentActiveIndex];
     if (!photo) return;
 
+    const displayTitle = formatPreviewTitle(photo.title);
+
     lbImage.src = photo.src;
-    lbImage.alt = photo.title;
-    lbTitle.innerText = photo.title;
+    lbImage.alt = displayTitle || photo.title;
+    lbTitle.innerText = displayTitle || photo.title;
     lbLoc.innerText = `${photo.location} (${photo.year})`;
     lbTech.innerText = `${photo.seriesTitle} · Highlight ${currentActiveIndex + 1} of ${curatedPhotos.length}`;
   }
